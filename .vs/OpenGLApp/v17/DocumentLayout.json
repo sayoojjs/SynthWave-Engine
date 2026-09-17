@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\sayoo\\Documents\\Visual Studio 2022\\Projects\\SynthWave-Engine\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{12DA4A46-DA1C-4755-8A96-8616AAD014FC}|OpenGLApp\\OpenGLApp.vcxproj|C:\\Users\\sayoo\\Documents\\Visual Studio 2022\\Projects\\SynthWave-Engine\\OpenGLApp\\ShadowMap.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{12DA4A46-DA1C-4755-8A96-8616AAD014FC}|OpenGLApp\\OpenGLApp.vcxproj|solutionrelative:OpenGLApp\\ShadowMap.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{12DA4A46-DA1C-4755-8A96-8616AAD014FC}|OpenGLApp\\OpenGLApp.vcxproj|C:\\Users\\sayoo\\Documents\\Visual Studio 2022\\Projects\\SynthWave-Engine\\OpenGLApp\\ShadowMap.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{12DA4A46-DA1C-4755-8A96-8616AAD014FC}|OpenGLApp\\OpenGLApp.vcxproj|solutionrelative:OpenGLApp\\ShadowMap.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{12DA4A46-DA1C-4755-8A96-8616AAD014FC}|OpenGLApp\\OpenGLApp.vcxproj|C:\\Users\\sayoo\\Documents\\Visual Studio 2022\\Projects\\SynthWave-Engine\\OpenGLApp\\ShadowMap.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{12DA4A46-DA1C-4755-8A96-8616AAD014FC}|OpenGLApp\\OpenGLApp.vcxproj|solutionrelative:OpenGLApp\\ShadowMap.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{12DA4A46-DA1C-4755-8A96-8616AAD014FC}|OpenGLApp\\OpenGLApp.vcxproj|C:\\Users\\sayoo\\Documents\\Visual Studio 2022\\Projects\\SynthWave-Engine\\OpenGLApp\\Texture.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{12DA4A46-DA1C-4755-8A96-8616AAD014FC}|OpenGLApp\\OpenGLApp.vcxproj|solutionrelative:OpenGLApp\\Texture.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{12DA4A46-DA1C-4755-8A96-8616AAD014FC}|OpenGLApp\\OpenGLApp.vcxproj|C:\\Users\\sayoo\\Documents\\Visual Studio 2022\\Projects\\SynthWave-Engine\\OpenGLApp\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -28,10 +32,6 @@
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\sayoo\\Documents\\Visual Studio 2022\\External_Libs\\ASSIMP\\include\\assimp\\defs.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{12DA4A46-DA1C-4755-8A96-8616AAD014FC}|OpenGLApp\\OpenGLApp.vcxproj|C:\\Users\\sayoo\\Documents\\Visual Studio 2022\\Projects\\SynthWave-Engine\\OpenGLApp\\Texture.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{12DA4A46-DA1C-4755-8A96-8616AAD014FC}|OpenGLApp\\OpenGLApp.vcxproj|solutionrelative:OpenGLApp\\Texture.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{12DA4A46-DA1C-4755-8A96-8616AAD014FC}|OpenGLApp\\OpenGLApp.vcxproj|C:\\Users\\sayoo\\Documents\\Visual Studio 2022\\Projects\\SynthWave-Engine\\OpenGLApp\\Shader.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -100,11 +100,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Main.cpp",
               "DocumentMoniker": "C:\\Users\\sayoo\\Documents\\Visual Studio 2022\\Projects\\SynthWave-Engine\\OpenGLApp\\Main.cpp",
               "RelativeDocumentMoniker": "OpenGLApp\\Main.cpp",
@@ -117,45 +117,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "ShadowMap.cpp",
               "DocumentMoniker": "C:\\Users\\sayoo\\Documents\\Visual Studio 2022\\Projects\\SynthWave-Engine\\OpenGLApp\\ShadowMap.cpp",
               "RelativeDocumentMoniker": "OpenGLApp\\ShadowMap.cpp",
               "ToolTip": "C:\\Users\\sayoo\\Documents\\Visual Studio 2022\\Projects\\SynthWave-Engine\\OpenGLApp\\ShadowMap.cpp",
               "RelativeToolTip": "OpenGLApp\\ShadowMap.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2026-09-17T11:56:40.925Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ShadowMap.h",
-              "DocumentMoniker": "C:\\Users\\sayoo\\Documents\\Visual Studio 2022\\Projects\\SynthWave-Engine\\OpenGLApp\\ShadowMap.h",
-              "RelativeDocumentMoniker": "OpenGLApp\\ShadowMap.h",
-              "ToolTip": "C:\\Users\\sayoo\\Documents\\Visual Studio 2022\\Projects\\SynthWave-Engine\\OpenGLApp\\ShadowMap.h",
-              "RelativeToolTip": "OpenGLApp\\ShadowMap.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-09-17T09:37:17.235Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "Model.h",
-              "DocumentMoniker": "C:\\Users\\sayoo\\Documents\\Visual Studio 2022\\Projects\\SynthWave-Engine\\OpenGLApp\\Model.h",
-              "RelativeDocumentMoniker": "OpenGLApp\\Model.h",
-              "ToolTip": "C:\\Users\\sayoo\\Documents\\Visual Studio 2022\\Projects\\SynthWave-Engine\\OpenGLApp\\Model.h",
-              "RelativeToolTip": "OpenGLApp\\Model.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-05-04T10:16:16.797Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
               "Title": "Model.cpp",
               "DocumentMoniker": "C:\\Users\\sayoo\\Documents\\Visual Studio 2022\\Projects\\SynthWave-Engine\\OpenGLApp\\Model.cpp",
               "RelativeDocumentMoniker": "OpenGLApp\\Model.cpp",
@@ -167,7 +142,45 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Texture.cpp",
+              "DocumentMoniker": "C:\\Users\\sayoo\\Documents\\Visual Studio 2022\\Projects\\SynthWave-Engine\\OpenGLApp\\Texture.cpp",
+              "RelativeDocumentMoniker": "OpenGLApp\\Texture.cpp",
+              "ToolTip": "C:\\Users\\sayoo\\Documents\\Visual Studio 2022\\Projects\\SynthWave-Engine\\OpenGLApp\\Texture.cpp",
+              "RelativeToolTip": "OpenGLApp\\Texture.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-05-04T05:17:50.147Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ShadowMap.h",
+              "DocumentMoniker": "C:\\Users\\sayoo\\Documents\\Visual Studio 2022\\Projects\\SynthWave-Engine\\OpenGLApp\\ShadowMap.h",
+              "RelativeDocumentMoniker": "OpenGLApp\\ShadowMap.h",
+              "ToolTip": "C:\\Users\\sayoo\\Documents\\Visual Studio 2022\\Projects\\SynthWave-Engine\\OpenGLApp\\ShadowMap.h",
+              "RelativeToolTip": "OpenGLApp\\ShadowMap.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-09-17T09:37:17.235Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 6,
+              "Title": "Model.h",
+              "DocumentMoniker": "C:\\Users\\sayoo\\Documents\\Visual Studio 2022\\Projects\\SynthWave-Engine\\OpenGLApp\\Model.h",
+              "RelativeDocumentMoniker": "OpenGLApp\\Model.h",
+              "ToolTip": "C:\\Users\\sayoo\\Documents\\Visual Studio 2022\\Projects\\SynthWave-Engine\\OpenGLApp\\Model.h",
+              "RelativeToolTip": "OpenGLApp\\Model.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-05-04T10:16:16.797Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "defs.h",
               "DocumentMoniker": "C:\\Users\\sayoo\\Documents\\Visual Studio 2022\\External_Libs\\ASSIMP\\include\\assimp\\defs.h",
               "RelativeDocumentMoniker": "..\\..\\External_Libs\\ASSIMP\\include\\assimp\\defs.h",
@@ -179,19 +192,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Texture.cpp",
-              "DocumentMoniker": "C:\\Users\\sayoo\\Documents\\Visual Studio 2022\\Projects\\SynthWave-Engine\\OpenGLApp\\Texture.cpp",
-              "RelativeDocumentMoniker": "OpenGLApp\\Texture.cpp",
-              "ToolTip": "C:\\Users\\sayoo\\Documents\\Visual Studio 2022\\Projects\\SynthWave-Engine\\OpenGLApp\\Texture.cpp",
-              "RelativeToolTip": "OpenGLApp\\Texture.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADAAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-05-04T05:17:50.147Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Texture.h",
               "DocumentMoniker": "C:\\Users\\sayoo\\Documents\\Visual Studio 2022\\Projects\\SynthWave-Engine\\OpenGLApp\\Texture.h",
               "RelativeDocumentMoniker": "OpenGLApp\\Texture.h",
