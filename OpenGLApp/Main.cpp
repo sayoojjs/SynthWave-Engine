@@ -142,7 +142,7 @@ void CreateShaders()
 
 int main()
 {
-	mainWindow = Window(1280, 720);
+	mainWindow = Window(2640, 1440);
 	mainWindow.Initialise();
 
 	CreateObjects();
@@ -162,7 +162,7 @@ int main()
 	sponza.LoadModel("Models/sponza.obj");
 
 
-	mainLight = DirectionalLight(0.0f, 0.0f, 0.0f, 
+	mainLight = DirectionalLight(1.0f, 1.0f, 1.0f, 
 		                        0.5f, 1.0f,
 		                        1.0f, -1.0f, -2.0f);
 
@@ -180,7 +180,7 @@ int main()
 
 	unsigned int spotLightCount = 0;
 
-	spotLights[0] = SpotLight(1.0f, 1.0f, 1.0f,
+	spotLights[0] = SpotLight(0.0f, 0.0f, 0.0f,
 							0.0f, 3.0f,
 							0.0f, 0.0f, 0.0f,
 							0.0f, -1.0f, 0.0f, 
