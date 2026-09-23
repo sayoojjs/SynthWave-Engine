@@ -8,4 +8,5 @@ uniform mat4 directionalLightTransform;
 void main()
 {
     gl_Position = directionalLightTransform * model * vec4(pos, 1.0);
+    DirectionalLightSpacePos = directionalLightTransform * model * vec(pos, 1.0);
 }
