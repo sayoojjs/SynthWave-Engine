@@ -54,18 +54,19 @@ uniform PointLight pointLights[MAX_POINT_LIGHTS];
 uniform SpotLight spotLights[MAX_SPOT_LIGHTS];
 
 uniform sampler2D theTexture;
-uniform sample2D directionalShadowMap;
+uniform sampler2D directionalShadowMap;
+
 uniform Material material;
 
 uniform vec3 eyePosition;
 
 float CalcDirectionalShadowFactor(DirectionalLight light)
 {
-	vec3 projcoords = DirectionalLightSpacePos.xyz / DirectionalLightSpacePos.w;
+	vec3 projCoords = DirectionalLightSpacePos.xyz / DirectionalLightSpacePos.w;
 	projCoords = (projCoords * 0.5) + 0.5; 
 
-	float closest = texture(directionalShadowMap, projCoords.xy).r;
-	float current = projCoords.z;
+	float closestDepth = texture(directionalShadowMap, projCoords.xy).r;
+	float currentDepth = projCoords.z;
 
 	float shadow = currentDepth > closestDepth ? 1.0 : 0.0;
 

@@ -1,5 +1,68 @@
-﻿  Main.cpp
-C:\Users\sayoo\Documents\Visual Studio 2022\Projects\SynthWave-Engine\OpenGLApp\Main.cpp(81,52): warning C4267: 'initializing': conversion from 'size_t' to 'unsigned int', possible loss of data
-C:\Users\sayoo\Documents\Visual Studio 2022\Projects\SynthWave-Engine\OpenGLApp\Main.cpp(209,15): warning C4244: 'initializing': conversion from 'double' to 'GLfloat', possible loss of data
-LINK : warning LNK4098: defaultlib 'MSVCRT' conflicts with use of other libs; use /NODEFAULTLIB:library
-  OpenGLApp.vcxproj -> C:\Users\sayoo\Documents\Visual Studio 2022\Projects\SynthWave-Engine\x64\Debug\OpenGLApp.exe
+﻿  DirectionalLight.cpp
+C:\Users\sayoo\Documents\Visual Studio 2022\Projects\SynthWave-Engine\OpenGLApp\ShadowMap.h(19,1): error C3867: 'ShadowMap::GetShadowHeight': non-standard syntax; use '&' to create a pointer to member
+C:\Users\sayoo\Documents\Visual Studio 2022\Projects\SynthWave-Engine\OpenGLApp\ShadowMap.h(19,10): error C2440: 'return': cannot convert from 'GLuint (__cdecl ShadowMap::* )(void)' to 'GLuint'
+C:\Users\sayoo\Documents\Visual Studio 2022\Projects\SynthWave-Engine\OpenGLApp\ShadowMap.h(19,10): message : There is no context in which this conversion is possible
+  Light.cpp
+C:\Users\sayoo\Documents\Visual Studio 2022\Projects\SynthWave-Engine\OpenGLApp\ShadowMap.h(19,1): error C3867: 'ShadowMap::GetShadowHeight': non-standard syntax; use '&' to create a pointer to member
+C:\Users\sayoo\Documents\Visual Studio 2022\Projects\SynthWave-Engine\OpenGLApp\ShadowMap.h(19,10): error C2440: 'return': cannot convert from 'GLuint (__cdecl ShadowMap::* )(void)' to 'GLuint'
+C:\Users\sayoo\Documents\Visual Studio 2022\Projects\SynthWave-Engine\OpenGLApp\ShadowMap.h(19,10): message : There is no context in which this conversion is possible
+C:\Users\sayoo\Documents\Visual Studio 2022\Projects\SynthWave-Engine\OpenGLApp\Light.cpp(14,31): warning C4244: 'argument': conversion from 'GLfloat' to 'GLuint', possible loss of data
+C:\Users\sayoo\Documents\Visual Studio 2022\Projects\SynthWave-Engine\OpenGLApp\Light.cpp(14,18): warning C4244: 'argument': conversion from 'GLfloat' to 'GLuint', possible loss of data
+  Main.cpp
+C:\Users\sayoo\Documents\Visual Studio 2022\Projects\SynthWave-Engine\OpenGLApp\ShadowMap.h(19,1): error C3867: 'ShadowMap::GetShadowHeight': non-standard syntax; use '&' to create a pointer to member
+C:\Users\sayoo\Documents\Visual Studio 2022\Projects\SynthWave-Engine\OpenGLApp\ShadowMap.h(19,10): error C2440: 'return': cannot convert from 'GLuint (__cdecl ShadowMap::* )(void)' to 'GLuint'
+C:\Users\sayoo\Documents\Visual Studio 2022\Projects\SynthWave-Engine\OpenGLApp\ShadowMap.h(19,10): message : There is no context in which this conversion is possible
+C:\Users\sayoo\Documents\Visual Studio 2022\Projects\SynthWave-Engine\OpenGLApp\Main.cpp(91,52): warning C4267: 'initializing': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:\Users\sayoo\Documents\Visual Studio 2022\Projects\SynthWave-Engine\OpenGLApp\Main.cpp(204,55): error C2102: '&' requires l-value
+C:\Users\sayoo\Documents\Visual Studio 2022\Projects\SynthWave-Engine\OpenGLApp\Main.cpp(233,45): error C2102: '&' requires l-value
+C:\Users\sayoo\Documents\Visual Studio 2022\Projects\SynthWave-Engine\OpenGLApp\Main.cpp(319,15): warning C4244: 'initializing': conversion from 'double' to 'GLfloat', possible loss of data
+  PointLight.cpp
+C:\Users\sayoo\Documents\Visual Studio 2022\Projects\SynthWave-Engine\OpenGLApp\ShadowMap.h(19,1): error C3867: 'ShadowMap::GetShadowHeight': non-standard syntax; use '&' to create a pointer to member
+C:\Users\sayoo\Documents\Visual Studio 2022\Projects\SynthWave-Engine\OpenGLApp\ShadowMap.h(19,10): error C2440: 'return': cannot convert from 'GLuint (__cdecl ShadowMap::* )(void)' to 'GLuint'
+C:\Users\sayoo\Documents\Visual Studio 2022\Projects\SynthWave-Engine\OpenGLApp\ShadowMap.h(19,10): message : There is no context in which this conversion is possible
+  Shader.cpp
+C:\Users\sayoo\Documents\Visual Studio 2022\Projects\SynthWave-Engine\OpenGLApp\ShadowMap.h(19,1): error C3867: 'ShadowMap::GetShadowHeight': non-standard syntax; use '&' to create a pointer to member
+C:\Users\sayoo\Documents\Visual Studio 2022\Projects\SynthWave-Engine\OpenGLApp\ShadowMap.h(19,10): error C2440: 'return': cannot convert from 'GLuint (__cdecl ShadowMap::* )(void)' to 'GLuint'
+C:\Users\sayoo\Documents\Visual Studio 2022\Projects\SynthWave-Engine\OpenGLApp\ShadowMap.h(19,10): message : There is no context in which this conversion is possible
+C:\Users\sayoo\Documents\Visual Studio 2022\Projects\SynthWave-Engine\OpenGLApp\Shader.cpp(100,38): warning C4477: 'snprintf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'size_t'
+C:\Users\sayoo\Documents\Visual Studio 2022\Projects\SynthWave-Engine\OpenGLApp\Shader.cpp(100,38): message : consider using '%zd' in the format string
+C:\Users\sayoo\Documents\Visual Studio 2022\Projects\SynthWave-Engine\OpenGLApp\Shader.cpp(103,38): warning C4477: 'snprintf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'size_t'
+C:\Users\sayoo\Documents\Visual Studio 2022\Projects\SynthWave-Engine\OpenGLApp\Shader.cpp(103,38): message : consider using '%zd' in the format string
+C:\Users\sayoo\Documents\Visual Studio 2022\Projects\SynthWave-Engine\OpenGLApp\Shader.cpp(106,38): warning C4477: 'snprintf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'size_t'
+C:\Users\sayoo\Documents\Visual Studio 2022\Projects\SynthWave-Engine\OpenGLApp\Shader.cpp(106,38): message : consider using '%zd' in the format string
+C:\Users\sayoo\Documents\Visual Studio 2022\Projects\SynthWave-Engine\OpenGLApp\Shader.cpp(109,38): warning C4477: 'snprintf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'size_t'
+C:\Users\sayoo\Documents\Visual Studio 2022\Projects\SynthWave-Engine\OpenGLApp\Shader.cpp(109,38): message : consider using '%zd' in the format string
+C:\Users\sayoo\Documents\Visual Studio 2022\Projects\SynthWave-Engine\OpenGLApp\Shader.cpp(112,38): warning C4477: 'snprintf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'size_t'
+C:\Users\sayoo\Documents\Visual Studio 2022\Projects\SynthWave-Engine\OpenGLApp\Shader.cpp(112,38): message : consider using '%zd' in the format string
+C:\Users\sayoo\Documents\Visual Studio 2022\Projects\SynthWave-Engine\OpenGLApp\Shader.cpp(115,38): warning C4477: 'snprintf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'size_t'
+C:\Users\sayoo\Documents\Visual Studio 2022\Projects\SynthWave-Engine\OpenGLApp\Shader.cpp(115,38): message : consider using '%zd' in the format string
+C:\Users\sayoo\Documents\Visual Studio 2022\Projects\SynthWave-Engine\OpenGLApp\Shader.cpp(118,38): warning C4477: 'snprintf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'size_t'
+C:\Users\sayoo\Documents\Visual Studio 2022\Projects\SynthWave-Engine\OpenGLApp\Shader.cpp(118,38): message : consider using '%zd' in the format string
+C:\Users\sayoo\Documents\Visual Studio 2022\Projects\SynthWave-Engine\OpenGLApp\Shader.cpp(127,38): warning C4477: 'snprintf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'size_t'
+C:\Users\sayoo\Documents\Visual Studio 2022\Projects\SynthWave-Engine\OpenGLApp\Shader.cpp(127,38): message : consider using '%zd' in the format string
+C:\Users\sayoo\Documents\Visual Studio 2022\Projects\SynthWave-Engine\OpenGLApp\Shader.cpp(130,38): warning C4477: 'snprintf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'size_t'
+C:\Users\sayoo\Documents\Visual Studio 2022\Projects\SynthWave-Engine\OpenGLApp\Shader.cpp(130,38): message : consider using '%zd' in the format string
+C:\Users\sayoo\Documents\Visual Studio 2022\Projects\SynthWave-Engine\OpenGLApp\Shader.cpp(133,38): warning C4477: 'snprintf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'size_t'
+C:\Users\sayoo\Documents\Visual Studio 2022\Projects\SynthWave-Engine\OpenGLApp\Shader.cpp(133,38): message : consider using '%zd' in the format string
+C:\Users\sayoo\Documents\Visual Studio 2022\Projects\SynthWave-Engine\OpenGLApp\Shader.cpp(136,38): warning C4477: 'snprintf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'size_t'
+C:\Users\sayoo\Documents\Visual Studio 2022\Projects\SynthWave-Engine\OpenGLApp\Shader.cpp(136,38): message : consider using '%zd' in the format string
+C:\Users\sayoo\Documents\Visual Studio 2022\Projects\SynthWave-Engine\OpenGLApp\Shader.cpp(139,38): warning C4477: 'snprintf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'size_t'
+C:\Users\sayoo\Documents\Visual Studio 2022\Projects\SynthWave-Engine\OpenGLApp\Shader.cpp(139,38): message : consider using '%zd' in the format string
+C:\Users\sayoo\Documents\Visual Studio 2022\Projects\SynthWave-Engine\OpenGLApp\Shader.cpp(142,38): warning C4477: 'snprintf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'size_t'
+C:\Users\sayoo\Documents\Visual Studio 2022\Projects\SynthWave-Engine\OpenGLApp\Shader.cpp(142,38): message : consider using '%zd' in the format string
+C:\Users\sayoo\Documents\Visual Studio 2022\Projects\SynthWave-Engine\OpenGLApp\Shader.cpp(145,38): warning C4477: 'snprintf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'size_t'
+C:\Users\sayoo\Documents\Visual Studio 2022\Projects\SynthWave-Engine\OpenGLApp\Shader.cpp(145,38): message : consider using '%zd' in the format string
+C:\Users\sayoo\Documents\Visual Studio 2022\Projects\SynthWave-Engine\OpenGLApp\Shader.cpp(148,38): warning C4477: 'snprintf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'size_t'
+C:\Users\sayoo\Documents\Visual Studio 2022\Projects\SynthWave-Engine\OpenGLApp\Shader.cpp(148,38): message : consider using '%zd' in the format string
+C:\Users\sayoo\Documents\Visual Studio 2022\Projects\SynthWave-Engine\OpenGLApp\Shader.cpp(151,38): warning C4477: 'snprintf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'size_t'
+C:\Users\sayoo\Documents\Visual Studio 2022\Projects\SynthWave-Engine\OpenGLApp\Shader.cpp(151,38): message : consider using '%zd' in the format string
+C:\Users\sayoo\Documents\Visual Studio 2022\Projects\SynthWave-Engine\OpenGLApp\Shader.cpp(291,36): warning C4267: '=': conversion from 'size_t' to 'GLint', possible loss of data
+  ShadowMap.cpp
+C:\Users\sayoo\Documents\Visual Studio 2022\Projects\SynthWave-Engine\OpenGLApp\ShadowMap.h(19,1): error C3867: 'ShadowMap::GetShadowHeight': non-standard syntax; use '&' to create a pointer to member
+C:\Users\sayoo\Documents\Visual Studio 2022\Projects\SynthWave-Engine\OpenGLApp\ShadowMap.h(19,10): error C2440: 'return': cannot convert from 'GLuint (__cdecl ShadowMap::* )(void)' to 'GLuint'
+C:\Users\sayoo\Documents\Visual Studio 2022\Projects\SynthWave-Engine\OpenGLApp\ShadowMap.h(19,10): message : There is no context in which this conversion is possible
+  SpotLight.cpp
+C:\Users\sayoo\Documents\Visual Studio 2022\Projects\SynthWave-Engine\OpenGLApp\ShadowMap.h(19,1): error C3867: 'ShadowMap::GetShadowHeight': non-standard syntax; use '&' to create a pointer to member
+C:\Users\sayoo\Documents\Visual Studio 2022\Projects\SynthWave-Engine\OpenGLApp\ShadowMap.h(19,10): error C2440: 'return': cannot convert from 'GLuint (__cdecl ShadowMap::* )(void)' to 'GLuint'
+C:\Users\sayoo\Documents\Visual Studio 2022\Projects\SynthWave-Engine\OpenGLApp\ShadowMap.h(19,10): message : There is no context in which this conversion is possible
+  Generating Code...

@@ -31,6 +31,7 @@ const float toRadians = 3.14159265f / 180.0f;
 GLuint uniformProjection = 0, uniformModel = 0, uniformView = 0, uniformEyePoisiton = 0,
 uniformSpecularIntensity = 0, uniformShininess = 0;
 
+
 Window mainWindow;
 std::vector<Mesh*> meshList;
 std::vector<Shader> shaderList;
@@ -51,6 +52,9 @@ Model sponza;
 DirectionalLight mainLight;
 PointLight pointLights[MAX_POINT_LIGHTS];
 SpotLight spotLights[MAX_SPOT_LIGHTS];
+
+unsigned int pointLightCount = 0;
+unsigned int spotLightCount = 0;
 
 GLfloat deltaTime = 0.0f;
 GLfloat lastTime = 0.0f;
@@ -218,21 +222,32 @@ void RenderPass(glm::mat4 projectionMatrix, glm::mat4 viewMatrix)
 
 	glViewport(0, 0, 1920, 1080);
 
+	// Clear the window
+	glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
+	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+
+
+	shaderList[0].SetDirectionalLight(&mainLight);
+	shaderList[0].SetPointLights(pointLights, pointLightCount);
+	shaderList[0].SetSpotLights(spotLights, spotLightCount);
+	shaderList[0].SetDirectionalLightTransform(&mainLight.CalculateLightTransform());
+
+	mainLight.GetShadowMap()->Read(GL_TEXTURE1);
+	shaderList[0].SetTexture(0);
+	shaderList[0].SetDirectionalShadowMap(1);
+
+	glUniformMatrix4fv(uniformProjection, 1, GL_FALSE, glm::value_ptr(projectionMatrix));
+	glUniformMatrix4fv(uniformView, 1, GL_FALSE, glm::value_ptr(viewMatrix));
+	glUniform3f(uniformEyePoisiton, camera.getCameraPoisiton().x, camera.getCameraPoisiton().y, camera.getCameraPoisiton().z);
 
 	glm::vec3 lowerLight = camera.getCameraPoisiton();
 	lowerLight.y -= 0.5f;
 	spotLights[0].SetFlash(lowerLight, camera.getCameraDirection());
 
-	shaderList[0].SetDirectionalLight(&mainLight);
-	shaderList[0].SetPointLights(pointLights, pointLightCount);
-	shaderList[0].SetSpotLights(spotLights, spotLightCount);
-
-
-	glUniformMatrix4fv(uniformProjection, 1, GL_FALSE, glm::value_ptr(projection));
-	glUniformMatrix4fv(uniformView, 1, GL_FALSE, glm::value_ptr(camera.calculateViewMatrix()));
-	glUniform3f(uniformEyePoisiton, camera.getCameraPoisiton().x, camera.getCameraPoisiton().y, camera.getCameraPoisiton().z);
+	RenderScene();
 
 }
+
 
 
 
@@ -258,11 +273,11 @@ int main()
 	sponza.LoadModel("Models/sponza.obj");
 
 
-	mainLight = DirectionalLight(1.0f, 1.0f, 1.0f, 
+	mainLight = DirectionalLight(1024, 1024,
+								1.0f, 1.0f, 1.0f, 
 		                        0.5f, 1.0f,
 		                        1.0f, -1.0f, -2.0f);
 
-	unsigned int pointLightCount = 0;
 
 	pointLights[0] = PointLight(0.0f, 0.0f, 0.0f,
 		                        0.0f, 0.0f,
@@ -274,7 +289,7 @@ int main()
 								-4.0f, 2.0f, 0.0f,
 								0.3f, 0.2f, 0.1f);
 
-	unsigned int spotLightCount = 0;
+
 
 	spotLights[0] = SpotLight(0.0f, 0.0f, 0.0f,
 							0.0f, 3.0f,
@@ -311,14 +326,13 @@ int main()
 		camera.keyControl(mainWindow.getsKeys(), deltaTime);
 		camera.mouseControl(mainWindow.getXChange(), mainWindow.getYChange());
 
-		// Clear the window
-		glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
-		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+
 
 		shaderList[0].UseShader();
 		
 
-
+		DirectionalShadowMapPass(&mainLight);
+		RenderPass(projection, camera.calculateViewMatrix());
 		
 
 		glUseProgram(0);
