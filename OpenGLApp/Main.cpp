@@ -275,8 +275,8 @@ int main()
 
 	mainLight = DirectionalLight(1024, 1024,
 								1.0f, 1.0f, 1.0f, 
-		                        0.5f, 1.0f,
-		                        1.0f, -1.0f, -2.0f);
+		                        0.1f, 1.0f,
+		                        1.0f, -7.0f, -2.0f);
 
 
 	pointLights[0] = PointLight(0.0f, 0.0f, 0.0f,
