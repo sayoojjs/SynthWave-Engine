@@ -42,11 +42,12 @@ Camera camera;
 
 Texture brickTexture;
 Texture dirtTexture;
+Texture PlainTexture;
 
 Material shinyMaterial;
 Material dullMaterial;
 
-Model sponza;
+Model xwing;
 //Model dragon;
 
 DirectionalLight mainLight;
@@ -183,10 +184,10 @@ void RenderScene()
 
 	model = glm::mat4(1.0f);
 	model = glm::translate(model, glm::vec3(0.0f, -2.0f, 0.0f));
-	model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));
+	model = glm::scale(model, glm::vec3(0.001f, 0.001f, 0.001f));
 	glUniformMatrix4fv(uniformModel, 1, GL_FALSE, glm::value_ptr(model));
 	shinyMaterial.UseMaterial(uniformSpecularIntensity, uniformShininess);
-	sponza.RenderModel();
+	xwing.RenderModel();
 }
 
 
@@ -201,7 +202,8 @@ void DirectionalShadowMapPass(DirectionalLight* light)
 	glClear(GL_DEPTH_BUFFER_BIT);
 
 	uniformModel = directionalShadowShader.GetModelLocation();
-	directionalShadowShader.SetDirectionalLightTransform(&light->CalculateLightTransform());
+	glm::mat4 lightTransform = light->CalculateLightTransform();
+	directionalShadowShader.SetDirectionalLightTransform(&lightTransform);
 
 	RenderScene();
 
@@ -230,7 +232,8 @@ void RenderPass(glm::mat4 projectionMatrix, glm::mat4 viewMatrix)
 	shaderList[0].SetDirectionalLight(&mainLight);
 	shaderList[0].SetPointLights(pointLights, pointLightCount);
 	shaderList[0].SetSpotLights(spotLights, spotLightCount);
-	shaderList[0].SetDirectionalLightTransform(&mainLight.CalculateLightTransform());
+	glm::mat4 lightTransform = mainLight.CalculateLightTransform();
+	shaderList[0].SetDirectionalLightTransform(&lightTransform);
 
 	mainLight.GetShadowMap()->Read(GL_TEXTURE1);
 	shaderList[0].SetTexture(0);
@@ -253,7 +256,7 @@ void RenderPass(glm::mat4 projectionMatrix, glm::mat4 viewMatrix)
 
 int main()
 {
-	mainWindow = Window(2640, 1440);
+	mainWindow = Window(1024, 1024);
 	mainWindow.Initialise();
 
 	CreateObjects();
@@ -265,12 +268,14 @@ int main()
 	brickTexture.LoadTextureA();
 	dirtTexture = Texture("Textures/dirt.png");
 	dirtTexture.LoadTextureA();
+	PlainTexture = Texture("Textures/plain.png");
+	PlainTexture.LoadTextureA();
 
 	shinyMaterial = Material(2.0f, 64);
 	dullMaterial = Material(0.3f, 4);
 
-	sponza = Model();
-	sponza.LoadModel("Models/sponza.obj");
+	xwing = Model();
+	xwing.LoadModel("Models/x-wing.obj");
 
 
 	mainLight = DirectionalLight(1024, 1024,

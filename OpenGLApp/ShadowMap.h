@@ -16,7 +16,7 @@ public:
 		return shadowWidth;
 	}
 	GLuint GetShadowHeight() {
-		return GetShadowHeight;
+		return shadowHeight;
 	}
 
 
